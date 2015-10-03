@@ -1,4 +1,4 @@
-BINARY=roll
+BINARY := roll
 
 SOURCEDIR=.
 SOURCES := $(shell find $(SOURCEDIR) -name '*.go')
@@ -8,16 +8,14 @@ BUILD_DATE=`date +%FT%T%z`
 
 LDFLAGS=-ldflags "-X github.com/ariejan/roll/core.Version=${VERSION} -X github.com/ariejan/roll/core.BuildDate=${BUILD_DATE}"
 
-.DEFAULT_GOAL := roll
-
-all: role
+.DEFAULT_GOAL := $(BINARY)
 
 .PHONY: help
 help:
 	echo ${VERSION}
 	echo ${BUILD_DATE}
 
-roll: $(SOURCES)
+$(BINARY): $(SOURCES)
 	go build ${LDFLAGS} -o ${BINARY} main.go
 
 .PHONY: install
