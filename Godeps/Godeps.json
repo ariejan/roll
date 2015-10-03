@@ -1,0 +1,27 @@
+{
+	"ImportPath": "github.com/ariejan/roll",
+	"GoVersion": "go1.5.1",
+	"Deps": [
+		{
+			"ImportPath": "github.com/inconshreveable/mousetrap",
+			"Rev": "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
+		},
+		{
+			"ImportPath": "github.com/spf13/cobra",
+			"Rev": "312092086bed4968099259622145a0c9ae280064"
+		},
+		{
+			"ImportPath": "github.com/spf13/hugo/utils",
+			"Comment": "v0.14-34-g12c7f83",
+			"Rev": "12c7f83fc34c309e299c75150c26640111de6317"
+		},
+		{
+			"ImportPath": "github.com/spf13/jwalterweatherman",
+			"Rev": "3d60171a64319ef63c78bd45bd60e6eab1e75f8b"
+		},
+		{
+			"ImportPath": "github.com/spf13/pflag",
+			"Rev": "5644820622454e71517561946e3d94b9f9db6842"
+		}
+	]
+}
