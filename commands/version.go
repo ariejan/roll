@@ -12,6 +12,6 @@ var version = &cobra.Command{
 	Short: "Print the version number of Roll",
 	Long:  `This is my version, there are many like it, but this one is mine.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("Roll %s\n", core.Version)
+		fmt.Println(core.Version)
 	},
 }
